@@ -26,8 +26,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Route Cells" rowHeight="50" id="aew-iv-O14">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aew-iv-O14" id="U7O-SY-0Na">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H2z-iL-yyr" kind="presentation" identifier="Property View" modalPresentationStyle="fullScreen" id="XI1-a6-SlM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -113,6 +117,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sJb-1b-OKL">
+            <objects>
+                <viewController id="H2z-iL-yyr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eae-tS-04o"/>
+                        <viewControllerLayoutGuide type="bottom" id="4eN-VL-ivN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8im-bo-rUk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XL-I6-oO1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Close"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97883156305154095" green="1" blue="0.53812051672509387" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="3XL-I6-oO1" secondAttribute="leading" id="I1n-4q-oxX"/>
+                            <constraint firstItem="3XL-I6-oO1" firstAttribute="top" secondItem="eae-tS-04o" secondAttribute="bottom" constant="-6" id="m9c-mn-ocs"/>
+                            <constraint firstItem="3XL-I6-oO1" firstAttribute="leading" secondItem="8im-bo-rUk" secondAttribute="leadingMargin" id="wUm-P7-0Kp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3XL-I6-oO1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="I1n-4q-oxX"/>
+                                <exclude reference="m9c-mn-ocs"/>
+                                <exclude reference="wUm-P7-0Kp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3XL-I6-oO1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="I1n-4q-oxX"/>
+                                <include reference="m9c-mn-ocs"/>
+                                <include reference="wUm-P7-0Kp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e99-l3-E6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="-324"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
