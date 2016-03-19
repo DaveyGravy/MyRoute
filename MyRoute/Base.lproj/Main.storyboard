@@ -34,6 +34,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="82" width="360" height="642"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="9pv-A4-QxB" id="Ph5-pd-hpC"/>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="8LY-Tb-MXf"/>
@@ -120,7 +123,7 @@
         <!--Details-->
         <scene sceneID="sJb-1b-OKL">
             <objects>
-                <viewController id="H2z-iL-yyr" userLabel="Details" sceneMemberID="viewController">
+                <viewController id="H2z-iL-yyr" userLabel="Details" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eae-tS-04o"/>
                         <viewControllerLayoutGuide type="bottom" id="4eN-VL-ivN"/>
@@ -133,11 +136,14 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="custom" customClass="DismissSegue" id="feR-BZ-21b"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rWh-Kv-8RU">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <connections>
-                                    <outlet property="delegate" destination="8im-bo-rUk" id="m4b-Pb-gEb"/>
+                                    <outlet property="delegate" destination="8im-bo-rUk" id="vsm-B4-LbG"/>
                                 </connections>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101 Richmond Road" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCt-Ke-dap">
@@ -194,6 +200,9 @@
                                 <exclude reference="m9c-mn-ocs"/>
                                 <exclude reference="VLa-cu-F2f"/>
                                 <exclude reference="Xjd-db-idq"/>
+                                <exclude reference="CFy-gC-bVM"/>
+                                <exclude reference="x5c-P2-tWf"/>
+                                <exclude reference="41K-EQ-lPa"/>
                                 <exclude reference="3pQ-Qv-GMn"/>
                                 <exclude reference="8Yr-mI-Bib"/>
                                 <exclude reference="FEQ-1p-fO2"/>
@@ -203,9 +212,6 @@
                                 <exclude reference="kb9-Fk-CY4"/>
                                 <exclude reference="rXy-ys-eJA"/>
                                 <exclude reference="v0F-Bd-JHj"/>
-                                <exclude reference="41K-EQ-lPa"/>
-                                <exclude reference="CFy-gC-bVM"/>
-                                <exclude reference="x5c-P2-tWf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -219,6 +225,9 @@
                                 <include reference="m9c-mn-ocs"/>
                                 <include reference="VLa-cu-F2f"/>
                                 <include reference="Xjd-db-idq"/>
+                                <include reference="CFy-gC-bVM"/>
+                                <include reference="x5c-P2-tWf"/>
+                                <include reference="41K-EQ-lPa"/>
                                 <include reference="3pQ-Qv-GMn"/>
                                 <include reference="8Yr-mI-Bib"/>
                                 <include reference="FEQ-1p-fO2"/>
@@ -228,14 +237,17 @@
                                 <include reference="kb9-Fk-CY4"/>
                                 <include reference="rXy-ys-eJA"/>
                                 <include reference="v0F-Bd-JHj"/>
-                                <include reference="41K-EQ-lPa"/>
-                                <include reference="CFy-gC-bVM"/>
-                                <include reference="x5c-P2-tWf"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="gCt-Ke-dap" id="6Un-mB-TXY"/>
+                        <outlet property="doneButton" destination="3XL-I6-oO1" id="wiX-eR-cj6"/>
+                        <outlet property="mapview" destination="rWh-Kv-8RU" id="Mex-y8-DY6"/>
+                        <outlet property="notesView" destination="eRr-3Y-ktq" id="xxW-kM-0Cj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e99-l3-E6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,4 +309,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="feR-BZ-21b"/>
+    </inferredMetricsTieBreakers>
 </document>

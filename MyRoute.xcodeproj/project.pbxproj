@@ -18,6 +18,8 @@
 		63AC38D41C7FF96B001010C9 /* MyRouteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC38D31C7FF96B001010C9 /* MyRouteTests.m */; };
 		63AC38DF1C7FF96B001010C9 /* MyRouteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC38DE1C7FF96B001010C9 /* MyRouteUITests.m */; };
 		63AC38ED1C7FFB01001010C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AC38EC1C7FFB01001010C9 /* MapKit.framework */; };
+		63B84AE81C9CC1E400C3D996 /* DetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */; };
+		63B84AEB1C9CCF1800C3D996 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		63AC38DE1C7FF96B001010C9 /* MyRouteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRouteUITests.m; sourceTree = "<group>"; };
 		63AC38E01C7FF96B001010C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AC38EC1C7FFB01001010C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		63B84AE61C9CC18E00C3D996 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = DetailViewController.mm; sourceTree = "<group>"; };
+		63B84AE91C9CCE8700C3D996 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				63AC38BF1C7FF96B001010C9 /* SecondViewController.h */,
 				63AC38C01C7FF96B001010C9 /* SecondViewController.m */,
 				63AC38C21C7FF96B001010C9 /* Main.storyboard */,
+				63B84AE61C9CC18E00C3D996 /* DetailViewController.h */,
+				63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */,
+				63B84AE91C9CCE8700C3D996 /* DismissSegue.h */,
+				63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */,
 				634BD8C21C82255500D6F5F0 /* house.png */,
 				63AC38C51C7FF96B001010C9 /* Assets.xcassets */,
 				63AC38C71C7FF96B001010C9 /* LaunchScreen.storyboard */,
@@ -289,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B84AE81C9CC1E400C3D996 /* DetailViewController.mm in Sources */,
 				63AC38C11C7FF96B001010C9 /* SecondViewController.m in Sources */,
 				63AC38BB1C7FF96B001010C9 /* AppDelegate.m in Sources */,
 				63AC38BE1C7FF96B001010C9 /* FirstViewController.m in Sources */,
+				63B84AEB1C9CCF1800C3D996 /* DismissSegue.m in Sources */,
 				63AC38B81C7FF96B001010C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
