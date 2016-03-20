@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		634BD8C31C82255500D6F5F0 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 634BD8C21C82255500D6F5F0 /* house.png */; };
 		63AC38B81C7FF96B001010C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC38B71C7FF96B001010C9 /* main.m */; };
 		63AC38BB1C7FF96B001010C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC38BA1C7FF96B001010C9 /* AppDelegate.m */; };
 		63AC38BE1C7FF96B001010C9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC38BD1C7FF96B001010C9 /* FirstViewController.m */; };
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		634BD8C21C82255500D6F5F0 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = Assets.xcassets/house.png; sourceTree = "<group>"; };
 		63AC38B31C7FF96B001010C9 /* MyRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AC38B71C7FF96B001010C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63AC38B91C7FF96B001010C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */,
 				63B84AE91C9CCE8700C3D996 /* DismissSegue.h */,
 				63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */,
-				634BD8C21C82255500D6F5F0 /* house.png */,
 				63AC38C51C7FF96B001010C9 /* Assets.xcassets */,
 				63AC38C71C7FF96B001010C9 /* LaunchScreen.storyboard */,
 				63AC38CA1C7FF96B001010C9 /* Info.plist */,
@@ -271,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634BD8C31C82255500D6F5F0 /* house.png in Resources */,
 				63AC38C91C7FF96B001010C9 /* LaunchScreen.storyboard in Resources */,
 				63AC38C61C7FF96B001010C9 /* Assets.xcassets in Resources */,
 				63AC38C41C7FF96B001010C9 /* Main.storyboard in Resources */,
