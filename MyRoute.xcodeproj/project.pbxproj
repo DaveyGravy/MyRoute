@@ -19,6 +19,9 @@
 		63AC38ED1C7FFB01001010C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AC38EC1C7FFB01001010C9 /* MapKit.framework */; };
 		63B84AE81C9CC1E400C3D996 /* DetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */; };
 		63B84AEB1C9CCF1800C3D996 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */; };
+		63B84AF01C9F277700C3D996 /* RouteCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63B84AEE1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodeld */; };
+		63B84AF21C9F2EFD00C3D996 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B84AF11C9F2EFD00C3D996 /* CoreData.framework */; };
+		63B84AF41C9F3AFF00C3D996 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B84AF31C9F3AFF00C3D996 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		63B84AE71C9CC1E400C3D996 /* DetailViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = DetailViewController.mm; sourceTree = "<group>"; };
 		63B84AE91C9CCE8700C3D996 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
 		63B84AEA1C9CCF1800C3D996 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		63B84AEF1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RouteCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		63B84AF11C9F2EFD00C3D996 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63B84AF31C9F3AFF00C3D996 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B84AF41C9F3AFF00C3D996 /* CoreLocation.framework in Frameworks */,
+				63B84AF21C9F2EFD00C3D996 /* CoreData.framework in Frameworks */,
 				63AC38ED1C7FFB01001010C9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +101,9 @@
 		63AC38AA1C7FF96B001010C9 = {
 			isa = PBXGroup;
 			children = (
+				63B84AF31C9F3AFF00C3D996 /* CoreLocation.framework */,
+				63B84AF11C9F2EFD00C3D996 /* CoreData.framework */,
+				63B84AEE1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodeld */,
 				63AC38EC1C7FFB01001010C9 /* MapKit.framework */,
 				63AC38B51C7FF96B001010C9 /* MyRoute */,
 				63AC38D21C7FF96B001010C9 /* MyRouteTests */,
@@ -297,6 +308,7 @@
 			files = (
 				63B84AE81C9CC1E400C3D996 /* DetailViewController.mm in Sources */,
 				63AC38C11C7FF96B001010C9 /* SecondViewController.m in Sources */,
+				63B84AF01C9F277700C3D996 /* RouteCoreDataModel.xcdatamodeld in Sources */,
 				63AC38BB1C7FF96B001010C9 /* AppDelegate.m in Sources */,
 				63AC38BE1C7FF96B001010C9 /* FirstViewController.m in Sources */,
 				63B84AEB1C9CCF1800C3D996 /* DismissSegue.m in Sources */,
@@ -553,6 +565,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63B84AEE1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63B84AEF1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 63B84AEF1C9F277700C3D996 /* RouteCoreDataModel.xcdatamodel */;
+			path = RouteCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 63AC38AB1C7FF96B001010C9 /* Project object */;
 }

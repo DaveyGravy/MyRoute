@@ -9,15 +9,16 @@
 #import <MapKit/MapKit.h>
 
 
-@interface DetailViewController : UIViewController <MKMapViewDelegate>
+@interface DetailViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 {
     
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
-@property (weak, nonatomic) IBOutlet MKMapView *mapview;
+@property (strong, nonatomic) IBOutlet MKMapView *mapview;
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end

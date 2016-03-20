@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "AppDelegate.h"
 
 @interface FirstViewController ()
 
@@ -19,12 +20,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // setup the array holding the route data
-    routeData = [[NSArray alloc] initWithObjects:   @"101 Richmond Rd",
-                                                    @"299 Elgin Street West",
+    routeData = [[NSArray alloc] initWithObjects:   @"5340 Canotek Road",
+                                                    @"299 Stonehaven",
                                                     @"360 Patricia St",
-                                                    @"24 Sussex",
+                                                    @"24 Steeple Chase",
                                                     @"1111 Milky Way",
-                                                    @"55 Main St",
+                                                    @"28 Tower Hill Cr",
+                                                    @"116 Newton Ave",
+                                                     @"55 Oak St",
+                                                     @"322 Barker Road",
+                                                     @"814 Jade Ave",
+                                                     @"703 Poplar Dr",
                                                     nil];
 }
 
@@ -43,8 +49,6 @@
 {
     UITableViewCell *cell = [routeTableView dequeueReusableCellWithIdentifier:@"Route Cells"];
     cell.textLabel.text = [routeData objectAtIndex:indexPath.row];
-    
-    cell.imageView.image = [UIImage imageNamed:@"house"];
     
     return cell;
 }
