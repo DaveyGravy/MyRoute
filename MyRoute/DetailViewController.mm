@@ -10,7 +10,9 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-
+{
+    NSArray *_pickerData;
+}
 @end
 
 @implementation DetailViewController
@@ -20,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
      self.mapview.delegate = self;
     
-    self.addressLabel.text = @"address";
+    //self.addressLabel.text = @"address";
     
     
     self.locationManager = [[CLLocationManager alloc] init];
@@ -39,8 +41,32 @@
             }
         }
     }
+    
+    // Picker: 1. Not started 2. Incomplete 3. Done
+    // Initialize Data
+    _pickerData = @[@"Not started", @"Incomplete", @"Done"];
+    //self.picker.dataSource = self;
+    //self.picker.delegate = self;
 }
 
+#pragma mark - UIPickerViewDataSource
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _pickerData.count;;
+}
+
+// The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _pickerData[row];
+}
+
+#pragma mark - MKMapViewDelegate
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 1000, 1000);

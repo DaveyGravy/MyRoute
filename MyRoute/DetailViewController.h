@@ -9,7 +9,7 @@
 #import <MapKit/MapKit.h>
 
 
-@interface DetailViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface DetailViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 {
     
 }
@@ -18,6 +18,9 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapview;
 @property (weak, nonatomic) IBOutlet UITextView *notesView;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
